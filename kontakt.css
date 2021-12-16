@@ -1,0 +1,135 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+body{
+  max-width: 1500px;
+  margin: auto;
+
+}
+h1 {
+  color: rgba(8,253,216,255);
+}
+
+nav{
+  grid-area: nav;
+  margin-top: 20px;
+
+}
+
+nav ul li{
+    list-style: none;
+    display:inline-block;
+    margin:0 100px;
+
+}
+
+
+
+
+nav ul li a{
+    text-decoration: none;
+    color: rgba(8,253,216,255);
+    font-size: 50px;
+}
+
+nav ul li a:hover{
+    color: #223f75;
+}
+
+nav ul li a > img:hover{
+box-shadow: 0 8px 8px 8px rgba(8,253,216,255);}
+
+#logo{
+  display:block;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+.kontakt{
+grid-area:kontakt;
+background-color: gray;
+margin: 70px auto;
+padding: 50px;
+}
+.mail{
+grid-area:mail;
+background-color: gray;
+margin: 70px auto;
+padding: 50px;
+}
+.tlf{
+grid-area:tlf;
+background-color: gray;
+margin: 70px auto;
+padding: 50px;
+}
+.facebook{
+grid-area:facebook;
+background-color: gray;
+margin: 70px auto;
+padding: 50px;
+}
+footer{
+grid-area:footer;
+background-color:gray;
+}
+
+.a{
+  text-decoration: none;
+  color: black;
+  border: 3px solid rgba(8,253,216,255);
+  padding: 15px 32px;
+  font-size: 16px;
+  border-radius: 12px;
+  transition: 0.35s;
+}
+
+.a:hover{
+  background-color: rgba(8,253,216,255);
+  color: white;
+}
+
+.container4{
+  background-color: rgba(29,29,29,255);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.3fr 1fr 1fr 1fr 0.05fr;
+  grid-template-areas:
+  "nav"
+  "mail"
+  "tlf"
+  "facebook"
+  "footer";
+  grid-gap:0.2rem;
+  align-items: center;
+  text-align: center;
+
+
+}
+
+@media only screen and (max-width:700px){
+  .container4{
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.3fr 1fr 1fr 1fr 0.05fr;
+    grid-template-areas:
+    "nav"
+    "mail"
+    "tlf"
+    "facebook"
+    "footer";
+    grid-gap:0.2rem;
+    align-items: center;
+    text-align: center;
+  }
+  nav ul li{
+      list-style: none;
+      margin-top: 30px;
+      text-align:center;
+      align-items: center;
+
+  }
+}

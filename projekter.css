@@ -1,0 +1,274 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+
+
+
+}
+
+body{
+  max-width: 1500px;
+  margin:auto;
+
+}
+h1 {
+  color: rgba(8,253,216,255);
+}
+
+#img_2{
+  margin-top: 170px;
+  margin-bottom: 125px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  align-items: center;
+}
+#img2_2{
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  align-items: center;
+  margin-top: 170px;
+  margin-bottom: 125px;
+}
+.img3_2{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  align-items: center;
+  margin-top: 70px;
+  width:500px;
+  height:500px;
+  background: url('projekt_billeder/flamen-02-01.png') 0 0 no-repeat;
+  animation: play 1.5s steps(10) infinite;
+}
+@keyframes play{
+  0%{background-position:0px;}
+100% { background-position: -5000px; }
+}
+
+#img4_2{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  height: 60%;
+  align-items: center;
+  margin-top: 150px;
+
+}
+#img5_2{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  height: 40%;
+  align-items: center;
+  margin-top: 250px;
+}
+#img6_2{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  height: 60%;
+  align-items: center;
+  margin-top: 150px;
+}
+#video, #xd1, #xd2{
+  text-decoration: none;
+  border: 3px solid rgba(8,253,216,255);
+  color: black;
+  margin-top: 50px;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 12px;
+  transition: 0.35s;
+
+
+}
+
+#video:hover{
+  background-color: rgba(8,253,216,255);
+  color: white;
+}
+#xd1:hover{
+  background-color: rgba(8,253,216,255);
+  color: white;
+}
+#xd2:hover{
+  background-color: rgba(8,253,216,255);
+  color: white;
+}
+
+footer{
+  grid-area: footer;background-color: gray;
+}
+
+.text_2{
+grid-area: text_2;
+background-color:gray;
+margin-top:70px;
+padding: 175px 0;
+text-align: center;
+color: white;
+}
+.img_2{grid-area: img_2}
+.text2_2{
+grid-area: text2_2;
+background-color:gray;
+margin-top:70px;
+padding: 175px 0;
+text-align: center;
+color: white;
+}
+.img2_2{grid-area: img2_2}
+.text3_2{
+grid-area: text3_2;
+background-color:gray;
+margin-top:70px;
+padding: 175px 0;
+text-align: center;
+color: white;
+}
+.img3_2{grid-area: img3_2}
+.text4_2{
+grid-area: text4_2;
+background-color:gray;
+margin-top:70px;
+padding: 175px 0;
+text-align: center;
+color: white;
+}
+.img4_2{grid-area: img4_2}
+.text5_2{
+grid-area: text5_2;
+background-color:gray;
+margin-top:70px;
+padding: 175px 0;
+text-align: center;
+color: white;
+}
+.img5_2{grid-area: img5_2}
+.text6_2{
+grid-area: text6_2;
+background-color:gray;
+margin-top:70px;
+padding: 0;
+padding-top: 275px;
+text-align: center;
+color: white;}
+.img6_2{grid-area: img6_2}
+
+nav{
+  grid-area: nav;
+  margin-top: 20px;
+
+}
+
+nav ul li{
+    list-style: none;
+    display:inline-block;
+    margin:0 100px;
+
+}
+
+
+
+
+nav ul li a{
+    text-decoration: none;
+    color: rgba(8,253,216,255);
+    font-size: 50px;
+}
+
+nav ul li a:hover{
+    color: #223f75;
+}
+
+nav ul li a > img:hover{
+box-shadow: 0 8px 8px 8px rgba(8,253,216,255)
+
+
+;
+}
+
+#logo{
+  display:block;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+
+
+
+}
+
+
+.container2{
+  background-color: rgba(29,29,29,255);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.3fr 0.5fr 1fr 1fr 1fr 1fr 1fr 0.05fr;
+  grid-template-areas:
+  "nav nav"
+  "img_2 text_2"
+  "text2_2 img2_2"
+  "img3_2 text3_2"
+  "text4_2 img4_2"
+  "img5_2 text5_2"
+  "text6_2 img6_2"
+  "footer footer";
+  grid-gap:0.2rem;
+
+
+
+}
+
+@media only screen and (max-width:1000px){
+.container2{
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.3fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 0.05fr;
+  grid-template-areas:
+  "nav"
+  "text_2"
+  "img_2"
+  "text2_2"
+  "img2_2"
+  "text3_2"
+  "img3_2"
+  "text4_2"
+  "img4_2"
+  "text5_2"
+  "img5_2"
+  "text6_2"
+  "img6_2"
+  "footer"
+  ;
+  grid-gap:0.2rem;
+  text-align: center;
+}
+nav ul li{
+    list-style: none;
+    margin-top: 30px;
+    text-align:center;
+    align-items: center;
+    padding-top: 30px;
+
+}
+.img3_2{
+  width:80%;
+}
+
+.text6_2{
+  padding: 135px 0;
+}
+
+
+}
